@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Anders\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Anders\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Anders\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AdventOfCode.-1238888016.00" t="ExcludeRecursive" />
+    <e p="D:\GameDev\Projects\progamer\AdventOfCode" t="IncludeFlat">
+      <e p="AdventOfCode.sln" t="IncludeFlat" />
+      <e p="AdventOfCode19" t="IncludeRecursive">
+        <e p="AdventOfCode19.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Day1" t="Include">
+          <e p="Day1.cs" t="Include" />
+          <e p="input" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="AdventOfCode19.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Utilities.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
