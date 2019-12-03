@@ -6,8 +6,7 @@ namespace AdventOfCode19
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine(9 % 12);
-			Day2.Day2.Run_1();
+			Day3.Day3.Run_1();
 		}
 	}
 }
