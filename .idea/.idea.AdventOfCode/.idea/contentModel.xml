@@ -13,6 +13,10 @@
           <e p="Day1.cs" t="Include" />
           <e p="input" t="Include" />
         </e>
+        <e p="Day2" t="Include">
+          <e p="Day2.cs" t="Include" />
+          <e p="input" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
