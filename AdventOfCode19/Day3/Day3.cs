@@ -51,6 +51,7 @@ namespace AdventOfCode19.Day3
 
 			//naive intersect search
 			var intersections = new List<Position>();
+			var steps = new List<Position>();
 			for (int i = 0; i < wireAPositions.Count; ++i)
 			{
 				var currentWireAPosition = wireAPositions[i];
@@ -60,11 +61,12 @@ namespace AdventOfCode19.Day3
 					if (IsEqual(currentWireAPosition, currentWireBPosition))
 					{
 						intersections.Add(currentWireBPosition);
+						steps.Add(new Position(i+1, j+1));
 					}
 				}
 			}
 			
-			int smallestDistance = 999999999;
+			int smallestDistance = int.MaxValue;
 			for (int i = 0; i < intersections.Count; ++i)
 			{
 				var distance = Math.Abs(intersections[i].X) + Math.Abs(intersections[i].Y);
@@ -72,14 +74,21 @@ namespace AdventOfCode19.Day3
 					smallestDistance = distance;
 			}
 			
-			Console.WriteLine(smallestDistance);
+			Console.WriteLine("smallestDistance " + smallestDistance);
+			
+			int smallestSteps = int.MaxValue;
+			for (int i = 0; i < steps.Count; ++i)
+			{
+				var distance = Math.Abs(steps[i].X) + Math.Abs(steps[i].Y);
+				if (smallestSteps > distance)
+					smallestSteps = distance;
+			}
+			
+			Console.WriteLine("smallestSteps " + smallestSteps);
 		}
 
-		private static bool IsEqual(Position a, Position b)
-		{
-			return a.X == b.X && a.Y == b.Y;
-		}
-		
+		private static bool IsEqual(Position a, Position b) => a.X == b.X && a.Y == b.Y;
+
 		private static List<Position> Create(string input, Position currentPosition)
 		{
 			char direction = input[0];
